@@ -9,7 +9,7 @@ Hey {}
 - مرحبـاً بـك عزيـزي {}
 - فـي بـوت كود تيرمكس$بايروجرام التابع لسيلفا
 
-- يعمـل هـذا البـوت لمساعدتـك بطريقـة سهلـه للحصـول على كـود تيرمكـس والبايروجرام تم انشـاء هـذا البـوت بواسطـة : @SU_SELVA
+- يعمـل هـذا البـوت لمساعدتـك بطريقـة سهلـه للحصـول على كـود تيرمكـس والبايروجرام تم انشـاء هـذا البـوت بواسطـة : @J0KER7x
     """
 
     # Home Button
@@ -25,7 +25,7 @@ Hey {}
     # Rest Buttons
     buttons = [
         [InlineKeyboardButton("- بدأ الاستخراج الكود", callback_data="generate")],
-        [InlineKeyboardButton("- قناة السورس", url="https://t.me/SU_SELVA")],
+        [InlineKeyboardButton("- قناة السورس", url="https://t.me/J0KER_7x")],
         [
             InlineKeyboardButton("- كيف تستخدمني ?", callback_data="help"),
             InlineKeyboardButton("- حول ", callback_data="about")
@@ -49,9 +49,9 @@ Hey {}
 - حـول البـوت . 
 
 - بـوت استخـراج كـود تيرمكـس خـاص بســورس سيلفا
-- قنـاة السـورس : @SU_SELVA
+- قنـاة السـورس : @J0KER_7x
 
-- المطور : @ttccss .
+- المطور : @J0KER7x .
 
 - لغـة البـوت : بـايثـون .
     """
