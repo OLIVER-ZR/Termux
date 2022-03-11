@@ -25,7 +25,7 @@ from telethon.errors import (
 @Client.on_message(filters.private & ~filters.forwarded & filters.command('generate'))
 async def main(_, msg):
     await msg.reply(
-        "اذا كنت تريد تنصيب سيلفا ميوزك فأختار بايروجرا, واذا تريد تنصيب التليثون فأختار تيرمكس",
+        "اذا كنت تريد تنصيب جوكر ميوزك فأختار بايروجرا, واذا تريد تنصيب التليثون فأختار تيرمكس",
         reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton("بايروجرام", callback_data="pyrogram"),
             InlineKeyboardButton("تيرمكس", callback_data="telethon")
@@ -109,13 +109,13 @@ async def generate_session(bot, msg, telethon=False):
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = "**{} STRING SESSION** \n\n`{}` \n\nمن قبل  @SU_SELVA".format("TELETHON" if telethon else "PYROGRAM", string_session)
+    text = "**{} STRING SESSION** \n\n`{}` \n\nمن قبل  @J0KER_7x".format("TELETHON" if telethon else "PYROGRAM", string_session)
     try:
         await client.send_message("me", text)
     except KeyError:
         pass
     await client.disconnect()
-    await phone_code_msg.reply("تم أستخراج بنجاح {} string session. \n\nاذهب الى الرسائل المحفوظة! \n\nتم ألاستخراج من قبل @SU_SELVA".format("telethon" if telethon else "pyrogram"))
+    await phone_code_msg.reply("تم أستخراج بنجاح {} string session. \n\nاذهب الى الرسائل المحفوظة! \n\nتم ألاستخراج من قبل @J0KER_7x".format("telethon" if telethon else "pyrogram"))
 
 
 async def cancelled(msg):
