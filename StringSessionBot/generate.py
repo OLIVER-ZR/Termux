@@ -25,7 +25,7 @@ from telethon.errors import (
 @Client.on_message(filters.private & ~filters.forwarded & filters.command('generate'))
 async def main(_, msg):
     await msg.reply(
-        "اذا كنت تريد تنصيب جوكر ميوزك فأختار بايروجرا, واذا تريد تنصيب التليثون فأختار تيرمكس",
+        "اذا كنت تريد تنصيب جوكر سفن اكس ميوزك فأختار بايروجرام, واذا تريد تنصيب التليثون جوكر سفن اكس  فأختار تيرمكس",
         reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton("بايروجرام", callback_data="pyrogram"),
             InlineKeyboardButton("تيرمكس", callback_data="telethon")
@@ -48,7 +48,7 @@ async def generate_session(bot, msg, telethon=False):
     if await cancelled(api_id_msg):
         return
     api_hash = api_hash_msg.text
-    phone_number_msg = await bot.ask(user_id, '- الان يرجى ارسال رقمك بشكل كامل , مثال :+964xxxxxxx', filters=filters.text)
+    phone_number_msg = await bot.ask(user_id, '- الان يرجى ارسال رقمك بشكل كامل , مثال :+20xxxxxxx', filters=filters.text)
     if await cancelled(api_id_msg):
         return
     phone_number = phone_number_msg.text
