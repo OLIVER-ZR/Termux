@@ -90,7 +90,7 @@ async def generate_session(bot, msg, telethon=False):
         return
     except (SessionPasswordNeeded, SessionPasswordNeededError):
         try:
-            two_step_msg = await bot.ask(user_id, 'حسابك يحتوي على التحقق بخطوتين - قم بكتابة الرمز لاتخاف حسابك آمن لدى سيلفا .', filters=filters.text, timeout=300)
+            two_step_msg = await bot.ask(user_id, 'حسابك يحتوي على التحقق بخطوتين - قم بكتابة الرمز لاتخاف حسابك آمن لدى جوكر سفن اكس .', filters=filters.text, timeout=300)
         except TimeoutError:
             await msg.reply('لغد بلغ الحد الزمني 5 دقايق. ارجع عيد من جديد.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
             return
