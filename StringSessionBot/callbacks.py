@@ -45,7 +45,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         )
     elif query == "generate":
         await callback_query.message.reply(
-            "اذا كنت تريد تنصيب جوكر سفن اكس ميوزك فأختار بايروجرام, واذا تريد تنصيب التليثون جوكر سفن اكس  فأختار تيرمكس",
+            "اذا كنت تريد تنصيب ميوزك فأختار بايروجرام, واذا تريد تنصيب اضغط تيرمكس",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("كود بايروجرام", callback_data="pyrogram"),
                 InlineKeyboardButton("كود تيرمكس", callback_data="telethon")
